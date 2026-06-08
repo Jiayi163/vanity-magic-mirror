@@ -1,0 +1,19 @@
+.app-shell--makeup {
+  background: #000;
+  color: #fff;
+}
+
+.app-shell__frame-light {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  border: 28px solid rgba(255, 255, 255, 0.92);
+  box-shadow:
+    inset 0 0 72px 18px rgba(255, 255, 255, 0.14),
+    0 0 36px 6px rgba(255, 255, 255, 0.25);
+}
+
+.dashboard--makeup {
+  min-height: 100vh;
+}

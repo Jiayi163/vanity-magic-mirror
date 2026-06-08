@@ -1,0 +1,121 @@
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw 4vh;
+  position: relative;
+}
+
+.dashboard__weather {
+  position: absolute;
+  top: 4vh;
+  left: 5vw;
+  max-width: 14rem;
+}
+
+.dashboard__clock {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42vh;
+  max-height: 58vh;
+  padding-top: 6vh;
+}
+
+.dashboard__calendar {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 22rem;
+}
+
+.clock {
+  text-align: center;
+}
+
+.clock__time {
+  font-size: clamp(4rem, 11vw, 7.5rem);
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.clock__date {
+  margin-top: 1.25rem;
+  font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+}
+
+.mirror-widget__title {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.55;
+}
+
+.calendar-widget .mirror-widget__title {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 1rem;
+}
+
+.weather-widget__temp {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 200;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.weather-widget__summary {
+  margin: 0.375rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+  opacity: 0.65;
+  line-height: 1.4;
+}
+
+.calendar-widget__events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-widget__event {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0.375rem 0;
+}
+
+.calendar-widget__event-time {
+  font-size: 0.9375rem;
+  opacity: 0.65;
+}
+
+.calendar-widget__event--empty {
+  opacity: 0.65;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 0 1.75rem 2.5rem;
+  }
+
+  .dashboard__clock {
+    min-height: 38vh;
+    padding-top: 4vh;
+  }
+
+  .clock__time {
+    font-size: 3.75rem;
+  }
+}
